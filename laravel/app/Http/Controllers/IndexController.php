@@ -11,7 +11,6 @@ class IndexController extends Controller
         $word = "Flemming";
         $encrypted_word = Crypt::encryptString($word);
 
-
-        return view('welcome', compact('word', 'encrypted_word'));
+        return view('index', compact('encrypted_word'));
     }
 }
